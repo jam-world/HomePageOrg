@@ -6,8 +6,8 @@
 #+DATE: 2016-06-19 Sun 23:03
 #+TITLE: Cheers!!!
 #+DESCRIPTION: first post
-#+TAGS: 
-#+CATEGORIES: 
+#+TAGS: daily
+#+CATEGORIES: daily
 
 * This is my first post
 github pages works well

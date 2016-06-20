@@ -1,0 +1,17 @@
+#+STARTUP: showall
+#+STARTUP: hidestars
+#+OPTIONS: H:2 num:nil tags:nil toc:nil timestamps:t
+#+LAYOUT: post
+#+AUTHOR: jamworld
+#+DATE: 2016-06-19 Sun 23:22
+#+TITLE: Latex and other tools
+#+DESCRIPTION: test the tools
+#+TAGS: test
+#+CATEGORIES: study
+
+* Latex 
+** equation
+$e^{i\Pi}+1=0$
+* Picture
+[[file:4.jpg]]
+

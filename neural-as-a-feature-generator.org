@@ -1,0 +1,13 @@
+#+STARTUP: showall
+#+STARTUP: hidestars
+#+OPTIONS: H:2 num:nil tags:nil toc:nil timestamps:t
+#+LAYOUT: post
+#+AUTHOR: jamworld
+#+DATE: 2016-06-19 Sun 23:12
+#+TITLE: Neural as a feature generator
+#+DESCRIPTION: neural
+#+TAGS: neural
+#+CATEGORIES: study
+
+* Feature Generator 
+Artificial Neural Network can be viewed as a super strong auto feature generator. Every time you train an neural network to learn a new model, you training an auto feature generator.  
