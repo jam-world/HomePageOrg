@@ -10,7 +10,6 @@
 #+CATEGORIES: study
 
 * Latex 
-** equation
-$e^{i\Pi}+1=0$
+$$e^{i\pi}+1=0$$
 * Picture
-[[file:/img/4.jpg]]
+[[img:4.jpg][test image]]

@@ -1,0 +1,13 @@
+#+STARTUP: showall
+#+STARTUP: hidestars
+#+OPTIONS: H:2 num:nil tags:nil toc:nil timestamps:t
+#+LAYOUT: post
+#+AUTHOR: jamworld
+#+DATE: 2016-06-20 Mon 01:56
+#+TITLE: dian shen
+#+DESCRIPTION: haha
+#+TAGS: test
+#+CATEGORIES: test
+
+* dian shen  
+great
