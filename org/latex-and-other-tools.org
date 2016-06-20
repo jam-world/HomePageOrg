@@ -13,5 +13,4 @@
 ** equation
 $e^{i\Pi}+1=0$
 * Picture
-[[file:4.jpg]]
-
+[[file:/img/4.jpg]]
