@@ -1,0 +1,13 @@
+#+STARTUP: showall
+#+STARTUP: hidestars
+#+OPTIONS: H:2 num:nil tags:nil toc:nil timestamps:t
+#+LAYOUT: post
+#+AUTHOR: jamworld
+#+DATE: 2016-06-20 Mon 17:05
+#+TITLE: test
+#+DESCRIPTION: daily
+#+TAGS: daily
+#+CATEGORIES: daily
+
+* Test my new emacs
+It should work with my new emacs
