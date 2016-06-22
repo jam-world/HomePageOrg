@@ -1,0 +1,13 @@
+#+STARTUP: showall
+#+STARTUP: hidestars
+#+OPTIONS: H:2 num:nil tags:nil toc:nil timestamps:t
+#+LAYOUT: post
+#+AUTHOR: jamworld
+#+DATE: 2016-06-22 Wed 02:30
+#+TITLE: yassnippet
+#+DESCRIPTION: yassnippet with spacemacs
+#+TAGS: org
+#+CATEGORIES: study
+
+* How to use yassnippet with spacemacs 
+It is strange that it seems the spacemacs won't auto-load all the snippets from your private snippets directory. However, if you create snippets by M-x yas-new-snippets. Then everything will just works fine. Kind of amazing. Anyway, Cheers, I got a fantastic yassnippet auto-complete now!!!

@@ -1,0 +1,13 @@
+#+STARTUP: showall
+#+STARTUP: hidestars
+#+OPTIONS: H:2 num:nil tags:nil toc:nil timestamps:t
+#+LAYOUT: post
+#+AUTHOR: jamworld
+#+DATE: 2016-06-22 Wed 00:17
+#+TITLE: Config my org step by step
+#+DESCRIPTION: how I made it to config my org-mode
+#+TAGS: org
+#+CATEGORIES: study
+
+* New start point for feature configuration 
+I hope I can do it once for all. Now it should be a great point for me to config my org-mode. I will try to make all the org-mode configuration by code inside the block that will only being executed after the org package is being loaded. It should be the problem that confused me for a long time. 

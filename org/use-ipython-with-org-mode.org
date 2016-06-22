@@ -1,0 +1,34 @@
+#+STARTUP: showall
+#+STARTUP: hidestars
+#+OPTIONS: H:2 num:nil tags:nil toc:nil timestamps:t
+#+LAYOUT: post
+#+AUTHOR: jamworld
+#+DATE: 2016-06-22 Wed 02:35
+#+TITLE: Use ipython with org-mode
+#+DESCRIPTION: Fantastic experience, combine org-mode with ipython
+#+TAGS: org
+#+CATEGORIES: study
+
+* Combine IPython with babel 
+I just finish experiment to combine the ipython with the babel in the org-mode. It was the most fantastic tool that I have ever used. Here are some examples.
+
+** import all matplotlib and numpy
+#+BEGIN_SRC ipython :session first
+  %matplotlib inline
+  import matplotlib.pyplot as plt
+  import numpy as np
+#+END_SRC
+
+** Use numpy to do some calculation
+#+BEGIN_SRC ipython :session first :exports both
+  [x for x in range(10)]
+#+END_SRC
+
+
+** Draw some picture with matplotlib
+#+BEGIN_SRC ipython :session first :file ../img/ipython-test.png :exports both
+  plt.hist(np.random.randn(20000), bins=200)
+#+END_SRC
+
+
+

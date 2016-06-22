@@ -1,0 +1,26 @@
+#+STARTUP: showall
+#+STARTUP: hidestars
+#+OPTIONS: H:2 num:nil tags:nil toc:nil timestamps:t
+#+LAYOUT: post
+#+AUTHOR: jamworld
+#+DATE: 2016-06-21 Tue 17:13
+#+TITLE: How to make picture with ditaa
+#+DESCRIPTION: Amazing tools for emacs to generate the usual graphs
+#+TAGS: emacs
+#+CATEGORIES: study
+
+* Draw graph with ditaa in org-mode
+I have worried for how to make beautiful graphs in the org-mode for a long time. However, I just find an awesome way to do it. In fact, the only thing I need to do for a beautiful image is just open a new source block with the source code ditaa, like this:
+#+BEGIN_SRC ditaa :file hi.png
+  +---------------------+       +---------------------+
+  |                     |       |                     |
+  |                     |       |                     |
+  |    Hello World!     +-------+       Awesome       |
+  |                     |       |                     |
+  |                     |       |                     |
+  +---------------------+       +---------------------+
+#+END_SRC
+
+#+results:
+[[file:hi.png]]
+
