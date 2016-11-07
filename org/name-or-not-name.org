@@ -1,0 +1,13 @@
+#+STARTUP: showall
+#+STARTUP: hidestars
+#+OPTIONS: H:2 num:nil tags:nil toc:nil timestamps:t
+#+LAYOUT: post
+#+AUTHOR: jamworld
+#+DATE: 2016-07-12 Tue 13:55
+#+TITLE: Name or not name
+#+DESCRIPTION: name or not name that is a problem
+#+TAGS: daily, thoughts
+#+CATEGORIES: daily
+
+* Name has magic 
+Think twice about the name you give to an object, sometimes the name have magic. Some times even a name is not necessary.

@@ -1,0 +1,18 @@
+#+STARTUP: showall
+#+STARTUP: hidestars
+#+OPTIONS: H:2 num:nil tags:nil toc:nil timestamps:t
+#+LAYOUT: post
+#+AUTHOR: jamworld
+#+DATE: 2016-06-23 Thu 15:58
+#+TITLE: RNN to C code?
+#+DESCRIPTION: Is that possible for us to build a problem to transfer rnn into c code?
+#+TAGS: RNN
+#+CATEGORIES: RNN, ttic, study
+
+* RNN to C? 
+Is there an possibility for us to build an general program to transfer the RNN network into an c code? This one should be easy, but the code we get may contain no meaningful results. We may get something that only compares the numerical variables and all the program is still like an black box. However, I believe it may be possible for us to go one step further.
+#+BEGIN_QUOTE
+Is understanding RNN the same procedure as software reverse engineering? 
+#+END_QUOTE 
+* RNN to math expression? 
+So rnn is like magic it can [[http://binds.cs.umass.edu/papers/1995_Siegelmann_Science.pdf][train over programs]], which means rnn can learn any algorithm we can write in any Turing complete language. And, It's that possible for us to reverse this procedure to produce the math expression for the algorithm? May be the first step I can do is to find out that, is there an program that can transfer the c code into the math expression? Or we can't do it easily with an universal C program but we can do it with the c program we learned from the rnn? 

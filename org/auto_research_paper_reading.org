@@ -1,0 +1,13 @@
+#+STARTUP: showall
+#+STARTUP: hidestars
+#+OPTIONS: H:2 num:nil tags:nil toc:nil timestamps:t
+#+LAYOUT: post
+#+AUTHOR: jamworld
+#+DATE: 2016-10-04 Tue 13:01
+#+TITLE: A dream: Auto Research
+#+DESCRIPTION: We are not fast enough, model needs to have ability to generate itself
+#+TAGS: ai
+#+CATEGORIES: ai
+
+* auto auto generation
+  Finding the necessary paper is now becoming more and more a problem. In the deep learning area there is newest information almost every month, even every week. However, most of the paper just describe a new structure or a new dataset, which, as far as I am considered, can be automatically done. Hence, Is that possible to build a system which can read the paper automatically, and reproduce the model described in the paper. Or maybe we can find a unified way to describe the model. Hence, the next thing can be just handled to the deep model it self.

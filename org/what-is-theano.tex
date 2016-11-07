@@ -1,0 +1,105 @@
+% Created 2016-06-28 Tue 13:05
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{jamworld}
+\date{2016-06-27 Mon 16:15}
+\title{What is Theano}
+\hypersetup{
+ pdfauthor={jamworld},
+ pdftitle={What is Theano},
+ pdfkeywords={},
+ pdfsubject={Discuss some of my thoughts on what is theano},
+ pdfcreator={Emacs 24.5.1 (Org mode 8.3.4)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+\section*{What is Theano?}
+\label{sec:orgheadline5}
+\subsection*{Shortest way}
+\label{sec:orgheadline1}
+Theano is an python library for tensor computation.
+\subsection*{Goal}
+\label{sec:orgheadline4}
+Easy to write and high performance.
+\begin{itemize}
+\item Easy to write and understand
+\label{sec:orgheadline2}
+Means that we can write down a symbolic \textbf{acyclic} graph model for the computation. The computation graph is easy for the human beings to understand.
+\item High performance
+\label{sec:orgheadline3}
+Theano will compile the given computation graph into the high performance C code or CUDA code.
+\end{itemize}
+\section*{Some details about Theano}
+\label{sec:orgheadline12}
+\subsection*{Graph Structure}
+\label{sec:orgheadline6}
+Two kinds of nodes
+\begin{description}
+\item[{Variable Nodes}] Represent data, usually tensor. (Input of many Op, Output of at most \textbf{one} Op \(\rightarrow\) SSA for compiler optimization)
+\item[{Apply Nodes}] Represent the application of mathematical operations.
+\end{description}
+In theano we organize the graph as 
+\begin{description}
+\item[{arcs}] variable
+\item[{nodes}] operators
+\end{description}
+\subsection*{Variable Type System}
+\label{sec:orgheadline8}
+In order to keep the data consistent for the low level implementation there is an type system for the theano library. 
+\begin{description}
+\item[{TensorType}] Type for every n-dimension array
+\item[{CudaNdarrayType}] Type for n-dimension cuda array
+\item[{GpuArrayType}] More general gpu type
+\item[{Sparse}] Sparse Matrix
+\end{description}
+\begin{itemize}
+\item \textbf{broadcastable pattern}
+\label{sec:orgheadline7}
+Indicate which dimension will be guaranteed to have dimension 1, thus we can broadcast on it. Also used for the memory layout.
+\end{itemize}
+\subsection*{Clone}
+\label{sec:orgheadline9}
+By cloning the graph we can build new graph from existing graph.
+\subsection*{Operator}
+\label{sec:orgheadline11}
+In order to implement the back propagation method. We need the reverse operator (R-Op)
+\begin{itemize}
+\item R-Operator (Symbolic Differentiation)
+\label{sec:orgheadline10}
+With chain rule, we can make differentiation in a recursion form.
+\begin{description}
+\item[{grad method}] Every apply nodes should have the grad method. Grad method here is an method that can implement the automatic differentiation. By automatic differentiation I mean differentiation via the chain rule. What we do here is just break every formula into small piece, the we the only thing we need to do is just implement the differentiation for every single pieces, which is quite simple, than by calling the grad method one by one we can get the differentiation for the whole complex formula.
+\item[{scan}] Since the whole graph is acyclic, hence we need some special operator for the loop. (Otherwise we will got cycle inside our graph). Scan will take care of the communication between the inner and outer computation graph. \textbf{IMPORTANT}, scan is responsible to manage the bookkeeping between the different iterations.
+\item[{R operator}] R operator will implement the forward operation. By calling the R operation method on each apply node's Op.
+\end{description}
+\begin{quote}
+The gradient of scan is implemented as another scan operation, which iterates over reversed sequences, computing the same gradient as if the loop had been unrolled, implementing what is known as \textbf{back-propagation through time}.Similarly, the R operator is also a scan operation that goes through the loop in the same order as the original scan. 
+\end{quote}
+\end{itemize}
+
+\section*{\textbf{NOTE}}
+\label{sec:orgheadline14}
+\begin{itemize}
+\item Theano is quite similar to the Spark.
+\label{sec:orgheadline13}
+In the sense of the computation graph to the high performance executable code. The reason we need something like theano and spark is that it is too difficult for us humans to understand the complex machine code for the complex computation. So as what we have done the mathematics we what more abstraction. So the direction we towards is just more and more high level abstraction. What we want is just high recursion. We what something that can auto-execute the instruction once we describe the base situation and the induction step.
+\end{itemize}
+\section*{References}
+\label{sec:orgheadline15}
+\href{http://arxiv.org/pdf/1605.02688v1.pdf}{Technique-Report-For-Theano.pdf}
+\end{document}

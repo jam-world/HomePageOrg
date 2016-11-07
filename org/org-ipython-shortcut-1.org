@@ -1,0 +1,17 @@
+#+STARTUP: showall
+#+STARTUP: hidestars
+#+OPTIONS: H:2 num:nil tags:nil toc:nil timestamps:t
+#+LAYOUT: post
+#+AUTHOR: jamworld
+#+DATE: 2016-06-22 Wed 15:08
+#+TITLE: Org Ipython Shortcut 1
+#+DESCRIPTION: some useful org ipython shortcut
+#+TAGS: org
+#+CATEGORIES: study
+
+* Note some useful org-mode shortcut here 
+There are some shortcuts in the org-mode which can help you work better.
+** Open an ipython terminal for test the python code
+Just press C-c v z
+** Execute all the code blocks in one buffer
+Just press C-c v b

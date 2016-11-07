@@ -1,0 +1,22 @@
+#+STARTUP: showall
+#+STARTUP: hidestars
+#+OPTIONS: H:2 num:nil tags:nil toc:nil timestamps:t
+#+LAYOUT: post
+#+AUTHOR: jamworld
+#+DATE: 2016-11-06 Sun 17:55
+#+TITLE: Two direction for A.I. and deep learning
+#+DESCRIPTION: The most important A.I. topic
+#+TAGS: deep learning
+#+CATEGORIES: thoughts
+
+* Deep Neural Network is powerful, however powerless too.
+  After working on the Deep Learning technique for about half a year. I felt that there must be something wrong with current deep learning method.
+** data dependency 
+   What your can do with the deep learning techniques is almost confined by the dataset you can find. The method is quite general, while the results is not so general. What ever you want to do, the dataset is the always the pre-request, and most of the hardest part of a project is how to find the dataset. And the results for a single dataset is not so general, that they can only be applied to the similar dataset, or a small subset of the real world situation
+** too many magic
+   Magic is fine for an A.I. solution, I don't expect the human beings to fully understand the true A.I. However, Deep Learning technique is more like something that is only built up by the black magic, the downside for such a black magic is that it is super hard for us to build a reasonable composed system out of the deep learning techniques and It is hard to decided to what extent can we believe the results of deep learning techniques.
+* Two future path I believe that is critical for A.I.
+** Combine IoT with the DNN
+   With the sensor on millions of thousands of tiny robots, it would be possible for us to collect huge number of data from the real world, and even better that we may collect the data with the label.
+** Combine CNN with the formal method
+   DNN and formal method is the two sides of one blade, hence, by combine this two techniques it would be possible for us to build an real system which can do both reasoning and have some sort of intuition.

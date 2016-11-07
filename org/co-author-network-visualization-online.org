@@ -1,0 +1,19 @@
+#+STARTUP: showall
+#+STARTUP: hidestars
+#+OPTIONS: H:2 num:nil tags:nil toc:nil timestamps:t
+#+LAYOUT: post
+#+AUTHOR: jamworld
+#+DATE: 2016-11-07 Mon 14:17
+#+TITLE: Co-Author Network Visualization Online
+#+DESCRIPTION: I open source and update my co-author network today
+#+TAGS: study
+#+CATEGORIES: study
+
+* Introduction
+  Can you imagine an abstract world, in which, researchers are like the stars in the dark skys. And they are connect with each other by some kind of abstract topics. For example, the researchers who works most on the lstm should be embedded in a near place and the researchers write most paper on optimizations should also be placed in the near place. Further more, the similar topics should also be put in the neighborhood. An interesting truth is that Hinton him self becomes one of the most famous topic, and this topic is surrounded by many topics about the neural network. 
+* Author Topic Network Demo
+  Here is some of the screen shot of the Author Topic Networks
+** 
+
+* Open source the Author-topic visualization, and host a demo on the Github
+  The co-author network visualization is pushed to [[https://jam-world.github.io/Author-Network-Visualization/index.html][Co-author Network]].

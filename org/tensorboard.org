@@ -1,0 +1,17 @@
+#+STARTUP: showall
+#+STARTUP: hidestars
+#+OPTIONS: H:2 num:nil tags:nil toc:nil timestamps:t
+#+LAYOUT: post
+#+AUTHOR: jamworld
+#+DATE: 2016-07-10 Sun 16:42
+#+TITLE: TensorBoard
+#+DESCRIPTION: I just find the reason to made me stick to tensorflow frameworks
+#+TAGS: tensorflow, study, CNN, visualization
+#+CATEGORIES: study
+
+* TensorBoard the reason for me to stick to tensorflow frameworks 
+I have wondered for a long time why should I move on to the tensorflow frameworks. I have learned the torch frameworks and theano. However, I just decided to change my main frameworks to the tensorflow. The main reason here is the tensorboard. CNN is quite confusing these days since a normal CNN these days will contain a huge amount of layers and tons of the computation nodes, which makes it very difficult for the human beings to understand. Especially, when the whole things you have is just the code.
+#+BEGIN_QUOTE
+The key to understand DNN is to visualize them.
+#+END_QUOTE 
+
